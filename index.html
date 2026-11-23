@@ -385,7 +385,6 @@
     background: var(--yellow);
     padding: 60px 28px 46px;
     overflow: hidden;
-    margin-top: auto;
   }
   .footer-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: flex-start; gap: 24px; flex-wrap: wrap; }
   .footer-claim {
@@ -569,8 +568,7 @@
 
   .view { display: none; background: rgba(247,247,245,0.94); min-height: 100vh; isolation: isolate; }
   .view.active {
-    display: flex;
-    flex-direction: column;
+    display: block;
     animation: viewIn 0.45s ease;
   }
   @keyframes viewIn {
@@ -607,7 +605,7 @@
     background-size: cover;
     background-position: center center;
   }
-  .view.active { display: flex; flex-direction: column; }
+  .view.active { display: block; }
   /* ---------- Übersetzer (schwebendes Symbol + Fenster) ---------- */
   .translate-fab {
     position: fixed; right: 20px; bottom: 20px; z-index: 600;
